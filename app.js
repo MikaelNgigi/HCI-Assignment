@@ -20,6 +20,7 @@ const sectionOneObserver= new IntersectionObserver
 sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
+// sliders js plugin
 
 $(document).ready(function () {
   $(".testimonial-carousel").owlCarousel({
