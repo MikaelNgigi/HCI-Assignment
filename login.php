@@ -44,12 +44,12 @@ session_start();
 </head>
 <body>
     <div class=userform>
-    <h1>sign in page</h1>
+    <h1>Sign In Page</h1>
     <form  action="login.php" method='post'>
 
         <input class="input-field" type="email" name="email" placeholder="example@example.com"><br>
         <input class="input-field" type="password" name="pwd" placeholder="password"><br>
-        <button class="submit" type="submit" name="login" value="login">login</button>
+        <button class="submit btn" type="submit" name="login" value="login">login</button>
         
     </form>
     <p class="index">Don't have an account? <br> </p>
