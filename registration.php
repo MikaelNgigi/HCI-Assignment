@@ -42,15 +42,9 @@ session_start();
     }
 
 ?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up page</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<?php 
+include_once 'navigation/auth_header.php'
+?>
     <div class=userform>
         <h1>Sign Up page</h1>
         <form action="registration.php" method="post">
@@ -62,5 +56,7 @@ session_start();
         </form>
         <a href="login.php">Already have an account?</a>
     </div>
-</body>
-</html>
+
+<?php 
+include_once 'navigation/auth_footer.php'
+?>

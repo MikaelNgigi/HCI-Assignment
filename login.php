@@ -34,15 +34,9 @@ session_start();
     }
 
 ?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<?php 
+include_once 'navigation/auth_header.php'
+?>
     <div class=userform>
     <h1>Sign In Page</h1>
     <form  action="login.php" method='post'>
@@ -55,5 +49,6 @@ session_start();
     <p class="index">Don't have an account? <br> </p>
     <a class="link" href="registration.php"  >Register now</a>
     </div>
-</body>
-</html>
+<?php 
+include_once 'navigation/auth_footer.php'
+?>
