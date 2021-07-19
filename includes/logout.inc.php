@@ -6,6 +6,6 @@ if(isset($_SESSION['user_email']))
     unset($_SESSION['user_email']);
 }
 
-//redirect to login
-header("Location: ../login.php");
+//redirect to index
+header("Location: ../index.php");
 die;
