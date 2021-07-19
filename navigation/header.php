@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Ubuntu:wght@700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="style/authentication.css">
   <link rel="stylesheet" href="style/main.css">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
@@ -23,7 +22,9 @@
 <header>
     <div class="main-logo-container">
       <div class="logo">
-        Gates N<br> Fences<br><span></span>
+        <a href="index.php">
+            Gates N<br> Fences<br><span></span>
+        </a>
       </div>
       
     </div>

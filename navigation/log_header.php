@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Ubuntu:wght@700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="style/authentication.css">
   <link rel="stylesheet" href="style/main.css">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
@@ -23,7 +22,7 @@
 <header>
     <div class="main-logo-container">
       <div class="logo">
-        <a class="logo-link" href="index.php">
+        <a href="indexlog.php">
             Gates N<br> Fences<br><span></span>
         </a>
       </div>
@@ -31,9 +30,12 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="login.php">Login</a></li>
-        <li><a href="registration.php">Sign Up</a></li>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Products</a></li>
+        <!-- <li><a href="#"></a></li> -->
+        <a class="link" href="includes/logout.inc.php">Logout</a>
       </ul>
       
     </nav>
