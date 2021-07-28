@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y" style="min-height:84vh">
+
+<!-- ============================ COMPONENT LOGIN   ================================= -->
+    {% if request.GET.action == 'verification' %}
+        <div class="container mx-auto alert alert-info text-center" role="alert" style="max-width: 1024px; margin-top:100px;">
+            Thank you for registering with Gates n Fences. We have sent you an activation link to [{{ request.GET.email }}]
+        <br>
+        Already Verified? <a href="{% url 'login' %}">Login to your account</a>
+        </div>
+    {% else %}
+
+	<div class="card mx-auto" style="max-width: 380px; margin-top:100px;">
+      <div class="card-body">
+          {% include 'accounts/alerts.html' %}
+      <h4 class="card-title mb-4">Sign in</h4>
+      <form action="{% url 'login' %}" method="POST" id="login_form">
+          {% csrf_token %}
+          <div class="form-group">
+			 <input type="email" class="form-control" placeholder="Email Address" name="email" >
+          </div> <!-- form-group// -->
+          <div class="form-group">
+			<input type="password" class="form-control" placeholder="Password" name="password" >
+          </div> <!-- form-group// -->
+
+          <div class="form-group">
+          	<a href="{% url 'forgot_password' %}" class="float-right">Forgot password?</a>
+
+          </div> <!-- form-group form-check .// -->
+          <div class="form-group">
+              <button type="submit" id="login_button" class="btn btn-primary btn-block"> Login  </button>
+          </div> <!-- form-group// -->
+      </form>
+      </div> <!-- card-body.// -->
+    </div> <!-- card .// -->
+
+     <p class="text-center mt-4">Don't have account? <a href="{% url 'register' %}">Register</a></p>
+     <br><br>
+<!-- ============================ COMPONENT LOGIN  END.// ================================= -->
+{% endif %}
+
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+
+
+</body>
+</html>
+{% endblock %}

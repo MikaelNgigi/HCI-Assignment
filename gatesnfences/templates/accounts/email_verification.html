@@ -1,0 +1,9 @@
+{% autoescape off %}
+    Hi {{ user.first_name }},
+    Please click the link below for your account verification:
+    http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+    If you did not sign up for this account you can ignore this email.
+
+    Gates N Fences Support Team
+{% endautoescape %}
