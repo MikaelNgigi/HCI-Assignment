@@ -1,0 +1,86 @@
+.userform{
+    background-color: #FBFBFB;
+    width: 800px;
+    margin: auto;
+    color: #000000;
+    padding: 100px 0px 10px 0px;
+    text-align: center;
+    border-radius:0px 0px 15px 15px ;
+}
+.userContent{
+    background-color: #FBFBFB;
+    width: 800px;
+    margin: auto;
+    color: #000000;
+    padding: 100px 0px 10px 0px;
+    text-align: center;
+    border-radius:0px 0px 15px 15px ;
+}
+input{
+    width: 270px;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    text-align: center;
+    margin-bottom: 27px;
+}
+button:hover  {background-color: #deb887; text-decoration: none;color: white;}
+a{
+    color: #CB782A;
+}
+a:hover  {color: #deb887; text-decoration: none;}
+p{
+   
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 20px;
+    
+    outline: none;
+    
+    text-align: center;
+}
+.btn {
+    padding: .5em;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    transition-duration: .5s;
+    font-weight: 500;
+    border-radius: .5em;
+  }
+  .button-dark {
+    background-color: #104B47;
+    color: #FF8353;
+  }
+  .button-dark:focus,
+  .button-dark:hover {
+    color: #104B47;
+    background-color: #FF8353;
+  }
+   
+  .button-accent {
+    color: #104B47;
+    background-color: #FF8353;
+  }
+  .button-accent:focus,.button-accent:hover {
+    background-color: #104B47;
+    color: #FF8353;
+  }
+  .button-ghost {
+    color: #104B47;
+    background-color: transparent;
+    border: 2px solid #104B47;
+    font-size: 1.05em;
+  }
+  .button-ghost:hover,.button-ghost:focus {
+    background-color: #104B47;
+    color: #FF8353;
+  }
+    
