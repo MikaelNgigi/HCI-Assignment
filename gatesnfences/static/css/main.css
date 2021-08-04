@@ -517,6 +517,7 @@
     white-space: nowrap;
     margin: .5em;
     text-align: left;
+    color:#FFFFFF
   }
   footer a:focus,footer a:hover{
       color: #FF8353;
