@@ -7,10 +7,341 @@ html {
   font-size: 15px;
 }
 
+h2, h3, h4{
+  text-transform: capitalize;
+}
+h5{
+  font-weight: normal;
+}
+
+.content-title{
+  text-align: center;
+}
+h3.content-title{
+  padding-top: px;
+  padding-bottom: 30px;
+}
+/*images*/
+.image-home-content{
+  width: fit-content;
+  height: auto;
+}
+/* about */
+.about{
+  
+  height: 70vh;
+  max-height: 70vh;
+  overflow: hidden;
+}
+.about-text{
+  padding: 10vh 1em;
+  line-height: 1.5em;
+  font-weight: 500;
+  font-size: large;
+}
+.about-img {
+  height: 100vh;
+  padding-top: 2em;
+  width: 2em;
+}
+@media(min-width:60rem) {
+  .about-img {
+    padding: 0;
+  }
+}
+/*buttons*/
+.btn-shop {
+  padding: .5em;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  transition-duration: .5s;
+  border-radius: .5em;
+  border-color:#3167eb ;
+}
+.button-shop:focus,
+.button-shop:hover {
+  color: #FFFFFF;
+  background-color: #3167eb;
+}
+/* home-hero */
+.home-hero {
+  height: 70vh;
+  padding: 20vh 1em;
+  min-height: 90vh;
+  font-size: 1em;
+  overflow: hidden;
+  font-weight: 500;
+  text-align: left;
+  position: relative;
+}
+.home-content img{
+  display: none;
+}
+.home-context-text{
+  line-height: 1.5em;
+  font-weight: 500;
+  font-size: large;
+}
+@media (min-width:60rem) {
+  .home-content img{
+    position: relative;
+    top:-6em;
+    display: block;
+    width: 50vw;
+    height: 90vh;
+    /*background-color: #104B47;*/
+  }
+}
+
+.home-hero button {
+  margin: 5em 0;
+  font-size: 1em;
+}
+/* flex behaviours */
+.grid-ish {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-ish>* {
+  flex: 1 1 20em;
+  min-width: 10em;
+  
+}
+.even-columns{
+  display: flex;
+}
+.even-columns>*{
+  width: 50%;
+  padding: .25em;
+  max-width: 50%;
+  margin: .25em; 
+}
+.even-columns>*:first-child{
+  width: 10%;
+}
+.container:nth-child(odd) {
+  background-color: #FFF;
+}
+.container:nth-child(even) {
+  background-color: rgb(241, 241, 241);
+}
+/* testimonial */
+.testimonial {
+  padding: .4em;
+  height: 400px;
+  align-items: center;
+}
+.testimonial-card {
+  text-align: center;
+  padding: 1em .25em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1em;
+}
+.testimonial-card>* {
+  width: 100%;
+  height: auto;
+}
+.testimonial-img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  object-position: top;
+}
+.testimonial-card i {
+  padding: .5em;
+  font-size: .9em;
+  position: relative;
+  left: -1.5em;
+  top: -3.5em;
+}
+.testimonial-card span {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+.testimonial-card span:last-child {
+  display: block;
+  font-size: 1em;
+  font-weight: lighter;}
+.testimonial-desc{
+  font-size: 1.5em;
+}
+/* cta */
+.cta {
+  padding: 3em .25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+/* products */
+.product-card{
+  display: inline-block;
+  height: 18em;
+  overflow: hidden;
+  margin: 1.5em;
+  border-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+}
+.product-img
+{
+  border-radius: 30px;
+  height: 18em;
+  width: 15em;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 0% 100%;
+  color: #FFF;
+}
+.product-card:hover .product-img,.product-card:focus .product-img{
+  transition-duration: .5s;
+  outline-offset: -3em;
+  outline: #104B47 solid 2px;
+}
+.product-desc{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 14.5em .5em ;
+  outline: 2px solid #FFF;
+  outline-offset: -3;
+  background-color: rgba(0, 0, 0, 0.288);
+}
+.product-desc h3{
+  color: #FFF;
+}
+/* manufacturers */
+.manufacturers{
+  text-align: center;
+}
+.manufacturers img {
+  max-width: 100%;
+  height: inherit;
+  object-fit: contain;
+  object-position: inherit;
+  filter: grayscale(100%) brightness(1%) contrast(100%);
+  opacity: .5;
+  width: 20em;
+  height: 200px;
+  width: 10em;
+  padding: 1em;
+}
+.manufacturers img:focus,.manufacturers img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.logo-container {
+  margin: 1em 0em;
+  width: 20em;
+  overflow: hidden;
+  padding: 2em;
+}
+@media(min-width:60rem) {
+  .about-img {
+    padding: 0;
+  }
+}
+/* contact */
+.contact-content:first-child{
+  padding: .25em; 
+}
+@media(min-width:60rem) {
+  .contact-content:first-child{
+    position: relative;
+    left: 4em;
+    width: 90vw;
+    height: 50vh;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    width:100%;
+    height: 49vh;
+    position:absolute;
+}
+.contact-info{
+  text-align: center;
+  padding: .25em ;
+  border-radius: 1px;
+  border-color:#343a40 ;
+}
+.contact-info h1, .contact-info i{
+  color: #343a40;
+}
+.even-columns{
+  padding-left: 15vh;
+}
+/* benefits */
+.benefit-card {
+  display: inline-block;
+  padding: 1em .75em;
+  border-radius: 30px;
+  margin: 1em;
+  transition-duration: .5s;
+  width: 11em;
+}
+.benefit-card p {
+  font-size: 1em;
+  font-weight: 900;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.benefit-icon {
+  width: 2em;
+  height: 2em;
+  transition-duration: .5s;
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+.benefit-card:hover .benefit-icon {
+  transition-duration: 0;
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(120deg) brightness(100%) contrast(80%);
+}
+
+.services{
+  padding-bottom: 30px;
+  
+}
+
+.services .benefits-container {
+  display: inline-block;
+  align-items: center;
+  
+}
+.services .benefits-container a {
+  font-size: .8em !important;
+  padding: .05em;
+  display: block;
+  position: relative;
+  top: 1.5em;
+  text-align: right;
+}
+.services .benefits-container a:hover,.services .benefits-container a:focus {
+  text-decoration: none;
+}
 /* ========================
 INCLUDE STYLES AND COMPONENTS
 ===================== */
 /* ================== HELPERS  =================== */
+a{
+  text-transform: capitalize;
+}
 a:hover {
   text-decoration: none;
 }
